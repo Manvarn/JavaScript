@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <!-- <style>
+    div {
+      height: 100px;
+      width: 100px;
+      color: white;
+      background: lightblue;
+      border: 1px solid black;
+    }
+  </style> -->
+
+  <body>
+    <!-- <button id="btn1">Click Me!</button> -->
+    <!-- <button ondblclick="console.log('clicked successfully')">
+      Click Me 2 times!
+    </button> -->
+    <!-- <div onmouseover="console.log('you are inside div')">this is a div</div> -->
+    <!-- JS -->
+
+    <script>
+      // let btn1 = document.querySelector("#btn1");
+      // let a = 25;
+      // btn1.onclick = () => {
+      //   console.log("btn1 was click");
+      //   a = ++a;
+      //   console.log(a);
+      // };
+      // ----------------
+      // function hello() {
+      //   console.log("hello");
+      // }
+
+      // setTimeout(hello, 5000);
+      // ----------------------
+      // console.log("one");
+      // console.log("two");
+
+      // setTimeout(() => {
+      //   console.log("hello");
+      // }, 4000);
+
+      // console.log("three");
+      // console.log("four");
+
+      // -----------------
+      // callback
+      // function sum(a, b) {
+      //   console.log(a + b);
+      // }
+
+      // function calculator(a, b, sum) {
+      //   sum(a, b);
+      // }
+
+      // calculator(2, 3, sum); //(valid)
+
+      // calculator(2, 3, (a, b) => { //(valid)
+      //   console.log(a + b);
+      // });
+
+      // const hello = () => {
+      //   console.log("Hello!");
+      // };
+      // setTimeout(hello, 5000);
+
+      // ---------------
+      // callback hell
+      // function getData(dataId) {
+      //   console.log("data", dataId);
+      // }
+
+      // function getData(dataId, getNextData) {
+      //   // 2s
+      //   setTimeout(() => {
+      //     console.log("Hello!", dataId);
+      //     if (getNextData) {
+      //       getNextData();
+      //     }
+      //   }, 2000);
+      // }
+
+      // //Callback Hell
+      // // this is nested callback
+      // console.log("getting data 1...");
+      // getData(1, () => {
+      //   console.log("getting data 2...");
+      //   getData(2, () => {
+      //     console.log("getting data 3...");
+      //     getData(3, () => {
+      //       console.log("getting data 4...");
+      //       getData(4);
+      //     });
+      //   });
+      // });
+
+      function getData(dataId, getNextData) {
+        return new Promise((resolve, reject) => {
+          setTimeout(() => {
+            console.log("Hello!", dataId);
+            if (getNextData) {
+              getNextData();
+            }
+          }, 2000);
+        });
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,7 @@
+.navbar-list {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  background: #34bdeb;
+  padding: 10px;
+}

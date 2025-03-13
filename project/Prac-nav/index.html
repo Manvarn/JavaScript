@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <nav class="navbar">
+      <div class="navbar-header">
+        <h1 style="text-align: center">WebSiteName</h1>
+      </div>
+      <ul class="navbar-list">
+        <li class="active"><a href="#home">Home</a></li>
+        <li>
+          <a href="https://youtu.be/Fnlnw8uY6jo?si=whdN9j9KNpbhmSQO">Careers</a>
+        </li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="home">
+      <h1 id="home">Home</h1>
+      <img src="pic1.jpeg" alt="" width="1250px" height="500px" />
+    </div>
+
+    <div class="careers">
+      <h1 id="careers">Careers</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum eos
+        repellendus voluptatibus perspiciatis reiciendis a facilis laboriosam,
+        eum, dignissimos aperiam iusto provident rerum aspernatur magni
+        repellat. Placeat facilis eum odio?Lorem ipsum dolor sit amet
+        consectetur adipisicing elit. At itaque corporis distinctio voluptates
+        unde veniam nisi sit id eaque aut, et beatae culpa omnis, assumenda
+        nostrum repellendus earum odit magnam!Lorem ipsum dolor sit amet
+        consectetur adipisicing elit. Illum eos repellendus voluptatibus
+        perspiciatis reiciendis a facilis laboriosam, eum, dignissimos aperiam
+        iusto provident rerum aspernatur magni repellat. Placeat facilis eum
+        odio?Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum eos
+        repellendus voluptatibus perspiciatis reiciendis a facilis laboriosam,
+        eum, dignissimos aperiam iusto provident rerum aspernatur magni
+        repellat. Placeat facilis eum odio?Lorem ipsum dolor sit amet
+        consectetur adipisicing elit. Illum eos repellendus voluptatibus
+        perspiciatis reiciendis a facilis laboriosam, eum, dignissimos aperiam
+        iusto provident rerum aspernatur magni repellat. Placeat facilis eum
+        odio?Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum eos
+        repellendus voluptatibus perspiciatis reiciendis a facilis laboriosam,
+        eum, dignissimos aperiam iusto provident rerum aspernatur magni
+        repellat. Placeat facilis eum odio?
+      </p>
+    </div>
+
+    <div class="about">
+      <h1 id="about">About Us</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum eos
+        repellendus voluptatibus perspiciatis reiciendis a facilis laboriosam,
+        eum, dignissimos aperiam iusto provident rerum aspernatur magni
+        repellat. Placeat facilis eum odio?Lorem ipsum dolor sit amet
+        consectetur adipisicing elit. At itaque corporis distinctio voluptates
+        unde veniam nisi sit id eaque aut, et beatae culpa omnis, assumenda
+        nostrum repellendus earum odit magnam!Lorem ipsum dolor sit amet
+        consectetur adipisicing elit. Illum eos repellendus voluptatibus
+        perspiciatis reiciendis a facilis laboriosam, eum, dignissimos aperiam
+        iusto provident rerum aspernatur magni repellat. Placeat facilis eum
+        odio?Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum eos
+        repellendus voluptatibus perspiciatis reiciendis a facilis laboriosam,
+        eum, dignissimos aperiam iusto provident rerum aspernatur magni
+        repellat. Placeat facilis eum odio?Lorem ipsum dolor sit amet
+        consectetur adipisicing elit. Illum eos repellendus voluptatibus
+        perspiciatis reiciendis a facilis laboriosam, eum, dignissimos aperiam
+        iusto provident rerum aspernatur magni repellat. Placeat facilis eum
+        odio?Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum eos
+        repellendus voluptatibus perspiciatis reiciendis a facilis laboriosam,
+        eum, dignissimos aperiam iusto provident rerum aspernatur magni
+        repellat. Placeat facilis eum odio?
+      </p>
+    </div>
+
+    <div class="contact">
+      <h1 id="contact">Contact</h1>
+      <p>address:Ahmedabad</p>
+      <p>contact:1234567890</p>
+      <p>emailID:admin123@gmail.com</p>
+    </div>
+
+    <!-- <button onmouseover="overbtn(this)" onmouseout="outbtn(this)">Check</button> -->
+    <!-- <button id="checkbtn">Check</button> -->
+    <div
+      onmousemove="myFunction(event)"
+      onmouseout="clearCoor()"
+      style="width: 200px; height: 100px; border: 1px solid black"
+    ></div>
+
+    <!-- <p id="text">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam
+      reiciendis mollitia quaerat sed perferendis provident, eum expedita,
+      ratione vero optio reprehenderit ad maxime. Possimus, iusto. Dicta, fugit
+      cumque! Nisi, laborum.
+    </p> -->
+  </body>
+  <script>
+    // document.getElementById("checkbtn").onclick = function () {
+    //   var textElement = document.getElementById("text");
+    //   textElement.style.color = "blue";
+    //   textElement.style.fontSize = "50px";
+    //   textElement.style.fontWeight = "bold";
+    // };
+    // function overbtn(x) {
+    //   x.style.height = "100px";
+    //   x.style.width = "100px";
+    // }
+    // function outbtn(x) {
+    //   x.style.height = "50px";
+    //   x.style.width = "50px";
+    // }
+    function myFunction(e) {
+      let x = e.clientX;
+      let y = e.clientY;
+      let coor = "Coordinates: (" + x + "," + y + ")";
+      document.getElementById("demo").innerHTML = coor;
+    }
+
+    function clearCoor() {
+      document.getElementById("demo").innerHTML = "";
+    }
+  </script>
+</html>

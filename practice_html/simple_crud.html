@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CRUD Basics</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <form id="form">
+        <textarea name="" id="input" cols="20" rows="5"></textarea>
+        <br /><br />
+        <div id="msg" style="color: red"></div>
+        <br />
+        <button type="submit">Submit</button>
+      </form>
+      <div id="posts"></div>
+    </div>
+  </body>
+  <script>
+    let control = false;
+    let form = document.getElementById("form");
+    let input = document.getElementById("input");
+    let posts = document.getElementById("posts");
+    let msg = document.getElementById("msg");
+    // let newElement = document.createElement("edit_txt");
+
+    form.addEventListener("submit", (e) => {
+      e.preventDefault();
+      console.log("clicked....");
+      formValidation();
+    });
+
+    formValidation = () => {
+      if (input.value === "") {
+        msg.innerHTML = "TextArea cannot be blank !!";
+        console.log("Failure");
+      } else {
+        console.log("Success");
+        msg.innerHTML = "";
+        acceptData();
+      }
+    };
+
+    let data = {};
+
+    let acceptData = () => {
+      data["text"] = input.value.trim();
+      showData();
+    };
+
+    let showData = () => {
+      posts.innerHTML = `
+                <div>
+                <p>${data.text}</p>
+                <span>
+                  <button onclick="deletepost(this)">delete</button>
+                  <button onclick="editpost(this)">edit</button>
+                </span>
+              </div>
+            `;
+      input.value = "";
+    };
+
+    let deletepost = (e) => {
+      e.parentElement.parentElement.remove();
+      console.log("Delete Successfully");
+    };
+
+    let editpost = (index) => {
+      input.value = data.text;
+    };
+  </script>
+</html>

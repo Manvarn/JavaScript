@@ -1,0 +1,110 @@
+-> Variables declared with let have Block Scope / Declared before use / cannot be Redeclared in the same scope
+
+-> ES6 introduced the two new JavaScript keywords: let and const.
+
+-> let , var , const cannot before initialization.
+
+-> let and const block scope / var is global scope	
+
+-> Variables defined with const cannot be Redeclared / cannot be Reassigned / have Block Scope
+
+-> A JavaScript function is a block of code designed to perform a particular task.
+
+-> Variables declared with var can have a global or local scope. Global scope is for variables declared outside functions, while local scope is for variables declared inside functions.
+
+-> Variables declared with let can have a global, local, or block scope. Block scope is for variables declared in a block. A block in JavaScript involves opening and closing curly braces
+
+-> Variables declared with const are similar to let in regards to scope. Such variables can have a global, local, or block scope.
+
+-> Object methods are actions that can be performed on objects.
+
+-> A method is a function definition stored as a property value.
+
+-> Object.values() returns an array of values from an object
+
+-> JavaScript objects can be converted to a string with JSON method JSON.stringify().
+
+-> Use object literals {} instead of new Object().
+
+-> Use array literals [] instead of new Array().
+
+-> Use pattern literals /()/ instead of new RegExp().
+
+-> Use function expressions () {} instead of new Function().
+
+-> Strings are for storing text / Strings are written with quotes
+
+-> an object constructor is a special function used to create and initialize objects.
+
+-> The fillRect() method draws a filled rectangle whose starting point is at (x, y) and whose size is specified by width and height . 
+
+-> push - add element end / pop - remove element end / shift - remove first element / unshift - add first element
+
+-> prompt always return string.
+
+-> In string some inbuilt properties (internal variable) or some function->methods.
+
+-> string position (singular - index) or (plural - indices).
+
+=> template literal - a way to have embedded experssions to string (`this is a template literal`);
+
+=> String Interpolation - To create a string by doing substitution of placeholders (`string text ${expression}` string text).
+
+-> escape character ki length single character ki Tarah count hoti he (ex: \t - 1).
+
+-> string are immutable in javascript. (immutable means string never change in string)
+
+-> string is immutable never change // array is mutable change.(particular index array change , or string value does not change directly)
+
+->  string - character collection / array - similar type of items ka collection / object - key value pair
+
+-> "Once a value is returned inside a function, no further code after the return statement is executed." translate in hindi or gujarati.
+
+-> Interview Que = Higher Order Function/Methods kya hota hai?? -> forEach (higher order function) dusre function ko as a parameter le lete hai  ya to fir kisi function ko return kate hai.
+
+-> <style> tag connects HTML with CSS.
+
+-> <script> tag connects HTML with JS.
+
+-> Window Object - The window object represents an open window in a browser. It is browser's object (not JavaScript's) & is automatically created by browser. It is a global with lots of properties & methods.
+
+-> The console. dir() method is used to get the list of object properties of a specified object. These object properties also have child objects, from which you can inspect for further information.
+
+-> nodes ke pass property hoti he "firstchild".
+
+-> callback function as a argument pass kare.
+
+
+---------- x ---------- CallBack , CallBack Hell , Synchronous , Asynchronous , Promises ---------- x ----------
+
+-> Callback - A callback is a function that is passed into another function as an argument and is executed after the completion of an asynchronous operation.
+
+-> What is a Callback? A callback is simply a function that you pass as an argument to another function, and that function gets called when the operation finishes. Callbacks are commonly used to handle asynchronous tasks like loading data, reading files, etc.
+
+->  Synchronous - In synchronous execution, tasks are performed one after the other in a sequential manner. Each operation must complete before the next one starts. The program waits for one task to finish before starting the next.
+
+-> Asynchronous - In asynchronous execution, tasks can run in parallel, meaning the program does not wait for one task to finish before starting another. The program moves on to the next task while waiting for other tasks (like fetching data or timers) to complete.
+
+-> Promises - A Promise is an object that represents the eventual completion or failure of an asynchronous operation. It allows you to handle asynchronous code more cleanly and with better control by providing then(), catch(), and finally() methods. (A promise is like a placeholder for the result of an asynchronous operation.)
+
+-- A Promise has three states:
+	- Pending: The operation is still ongoing.	
+	- Fulfilled: The operation complete	d successfully.
+	- Rejected: The operation failed.
+
+-> .then() is used to handle the successful result (when the promise is fulfilled).
+
+-> .catch() is used to handle the error (when the promise is rejected).
+ 
+-> .then() and .catch() handle the result or error accordingly.
+
+-> The promise takes a function with two parameters: resolve and reject. 
+
+-> resolve(value): when the task is successful. // reject(error): This is called when there is an error.
+
+-> the resolve or reject is called after the 2 seconds, depending on whether the operation was successful.
+
+->  toggling an element class refers to the process of dynamically adding or removing a CSS class from an HTML element.
+
+-> array , object , function , string
+

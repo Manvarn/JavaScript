@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Display Name Example</title>
+    <style>
+      /* Style for the displayed message */
+      #output {
+        font-size: 20px;
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Enter Your Name</h1>
+
+    <!-- Input field to enter name -->
+    <input type="text" id="name" placeholder="Enter your name" />
+
+    <br /><br />
+
+    <!-- Button to trigger the function -->
+    <button onclick="displayName()">Display Name</button>
+
+    <!-- Div to display the entered name -->
+    <div id="output"></div>
+
+    <script>
+      // Function to display the name when the button is clicked
+      function displayName() {
+        // Get the value of the input field
+        const nameInput = document.getElementById("name");
+        const name = nameInput.value;
+
+        // Get the output div element
+        const outputDiv = document.getElementById("output");
+
+        // Check if the name is entered (not empty)
+        if (name.trim()) {
+          // Display the name in the output div
+          outputDiv.textContent = "Hello, " + name + "!";
+        } else {
+          // If no name is entered, show a message asking for the name
+          outputDiv.textContent = "Please enter your name.";
+        }
+
+        // Optionally, clear the input field after displaying
+        nameInput.value = "";
+      }
+    </script>
+  </body>
+</html>
